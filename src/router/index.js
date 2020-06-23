@@ -8,6 +8,9 @@ import Rights from '../components/power/Rights.vue'
 import Roles from '../components/power/Roles.vue'
 import Cate from '../components/goods/Cate.vue'
 import Params from '../components/goods/Params.vue'
+// 突然间发现import后面的值是自定义的，我一直以为是和文件名要保持一致的
+import GoodsList from '../components/goods/List.vue'
+import Add from '../components/goods/Add.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +42,12 @@ const routes = [{
     }, {
         path: '/params',
         component: Params
+    }, {
+        path: '/goods',
+        component: GoodsList
+    }, {
+        path: '/goods/add',
+        component: Add
     }]
 }]
 
