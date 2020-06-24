@@ -11,6 +11,7 @@ import Params from '../components/goods/Params.vue'
 // 突然间发现import后面的值是自定义的，我一直以为是和文件名要保持一致的
 import GoodsList from '../components/goods/List.vue'
 import Add from '../components/goods/Add.vue'
+import Order from '../components/order/Order.vue'
 
 Vue.use(VueRouter)
 
@@ -48,6 +49,9 @@ const routes = [{
     }, {
         path: '/goods/add',
         component: Add
+    }, {
+        path: '/orders',
+        component: Order
     }]
 }]
 
